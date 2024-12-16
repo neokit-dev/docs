@@ -17,13 +17,17 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "NPM",
+      "url": "https://npmjs.com/package/@neokit-dev/core"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/neokit-dev/core"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Quick Start",
+    "url": "/introduction"
   },
   "tabs": [
     {
@@ -58,18 +62,19 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Official plugins",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "plugin/relational",
+        "plugin/buckets",
+        "plugin/keyvalue",
+        "plugin/d1",
+        "plugin/r2",
+        "plugin/cloudflare-kv",
+        "plugin/relational-kv"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Plugin API",
       "pages": [
         "api-reference/introduction"
       ]
