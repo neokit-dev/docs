@@ -1,0 +1,32 @@
+---
+title: 'Cloudflare D1'
+description: 'Connect your favorite relational DBMS to your SvelteKit application'
+icon: 'database'
+---
+
+## Installation
+
+```bash
+npx nktool add d1
+```
+
+## Usage
+
+### Bind your database
+
+If you install the plugin directly through `nktool`, the CLI will guide you through the configuration process.
+
+### Query the database
+
+You can use the `query` function everywhere you want, as long the function is being called on the server side.
+
+```ts src/routes/api/posts/+server.ts {2,5}
+import { json } from '@sveltejs/kit';
+import { query } from '@neokit-dev/relational';
+
+export async function GET() {
+  const result = await query('SELECT * FROM posts');
+
+  return json(result);
+}
+```
