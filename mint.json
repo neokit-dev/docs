@@ -29,12 +29,7 @@
     "name": "Quick Start",
     "url": "/introduction"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
+  "tabs": [],
   "anchors": [],
   "navigation": [
     {
