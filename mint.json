@@ -2,10 +2,10 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "NeoKit",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/dark.png",
+    "light": "/logo/light.png"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "colors": {
     "primary": "#008888",
     "light": "#008888",
@@ -48,7 +48,7 @@
         "plugin/keyvalue",
         "plugin/d1",
         "plugin/r2",
-        "plugin/cloudflare-kv",
+        "plugin/workers-kv",
         "plugin/relational-kv"
       ]
     }

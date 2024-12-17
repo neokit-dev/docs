@@ -21,6 +21,8 @@ npx nktool add relational
 
 This is one of the plugins that allow injection by other plugins, so you can depend on it in your plugin and extend it.
 
+### Extend the plugin
+
 Here's an example from the D1 plugin:
 
 ```ts src/lib/index.ts
@@ -77,3 +79,13 @@ export function namespace(namespace: string): D1Plugin {
   return access(rid)[namespace].plugin as D1Plugin;
 }
 ```
+
+### Methods
+
+#### `query`
+
+Queries the database.
+
+**Parameters:** `query: string`, `...params: unknown[]`
+
+**Returns:** `Promise<Record<string, unknown>[]>`

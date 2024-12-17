@@ -21,6 +21,8 @@ npx nktool add buckets
 
 This is one of the plugins that allow injection by other plugins, so you can depend on it in your plugin and extend it.
 
+### Extend the plugin
+
 Here's an example from the R2 plugin:
 
 ```ts src/lib/index.ts
@@ -98,3 +100,37 @@ export function namespace(namespace: string): R2Plugin {
   return access(bid)[namespace].plugin as R2Plugin;
 }
 ```
+
+### Methods
+
+#### `metadata`
+
+Get the metadata of a file.
+
+**Parameters:** `path: string`
+
+**Returns:** `unknown`
+
+#### `download`
+
+Download a file.
+
+**Parameters:** `path: string`
+
+**Returns:** `ArrayBuffer`
+
+#### `upload`
+
+Upload a file.
+
+**Parameters:** `path: string, data: ArrayBuffer`
+
+**Returns:** `void`
+
+#### `remove`
+
+Remove a file.
+
+**Parameters:** `path: string`
+
+**Returns:** `void`
